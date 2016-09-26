@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Kviz kreator v1.0</string>
+
+    <!--ALL -->
+    <string name="server_response_error">Greška na poslužitelju(serveru)</string>
+    <string name="alert">U redu</string>
+    <string name="back_button">Nazad</string>
+    <string name="logout_button">Odjavi se</string>
+    <string name="try_again">Greška, pokušajte ponovno!</string>
+    <string name="select_action">Odaberi akciju!</string>
+    <string name="confirm_action">U redu!</string>
+    <string name="internet_connection">Niste povezani na internet!</string>
+
+
+    <!-- LoginActivity -->
+    <string name="login_button">Prijava</string>
+    <string name="register_link">Nemaš račun? Klikni za registraciju! </string>
+    <string name="login_username">Korisničko ime</string>
+    <string name="login_password">Zaporka</string>
+    <string name="login_username_validation">Unesite korisničko ime!</string>
+    <string name="login_password_validation">Unesite zaporku!</string>
+    <string name="login_user_pass_validation">Neispravno korisničko ime i/ili neispravna zaporka</string>
+
+    <!-- RegisterActivity -->
+    <string name="register_button">Registriraj račun</string>
+    <string name="register_username">Korisničko ime</string>
+    <string name="register_password">Zaporka</string>
+    <string name="register_password_again">Ponovi zaporku</string>
+    <string name="register_username_exist">Uneseno korisničko ime već postoji!</string>
+    <string name="register_username_validation">Unesite korisničko ime!</string>
+    <string name="register_password_validation">Unesite zaporku!</string>
+    <string name="register_password_again_validation">Unesite zaporku ponovno!</string>
+    <string name="register_password_match_validation">Zaporke se ne poklapaju!</string>
+    <string name="register_username_length_validation">Korisničko ime mora sadržavati najmanje 4 znaka!</string>
+    <string name="register_password_length_validation">Zaporka mora sadržavati najmanje 6 znakova!</string>
+    <string name="register_success">Registracija uspješna!</string>
+    <string name="register_acc_type_text">Vrsta računa:</string>
+    <string-array name="account_type">
+        <item>Kviz kreator</item>
+        <item>Korisnik kviza</item>
+    </string-array>
+
+    <!-- QuizCreatorActivity -->
+    <string name="create_quiz_button">Kreiraj novi kviz</string>
+    <string name="list_of_quizzess_button">Popis kvizova</string>
+    <string name="quiz_name_text">Unesi ime kviza:</string>
+    <string name="quiz_name_edit_text">Ime kviza:</string>
+    <string name="quiz_key_edit_text">Ključ kviza:</string>
+    <string name="quiz_name_validation">Unesite ime kviza!</string>
+    <string name="key_name_validation">Unesite ključ kviza!</string>
+    <string name="quiz_duration_validation">Unesite trajanje kviza!</string>
+    <string name="create_quiz_button_popup">Kreiraj kviz</string>
+    <string name="cancel_popup">Odustani</string>
+    <string name="key_exist">Uneseni ključ već postoji!</string>
+    <string name="quiz_duration">Trajanje kviza u sekundama:</string>
+
+
+    <!-- ListOfQuizzessActivity -->
+    <string name="list_of_quizzess_edit">Uredi kviz</string>
+    <string name="list_of_quizzess_delete">Obriši kviz</string>
+    <string name="list_of_quizzess_upload">Prenesi na poslužitelj</string>
+    <string name="list_of_quizzess_cancel">Odustani</string>
+    <string name="list_of_quizzess_delete_alert">Dali ste sigurni da želite obrisati stavku?</string>
+    <string name="list_of_quizzess_delete_alert_yes">Da</string>
+    <string name="list_of_quizzess_delete_alert_no">Odsutani</string>
+    <string name="list_of_quizzess_uplad_exist">Podaci su već preneseni na poslužitelj!</string>
+    <string name="list_of_quizzess_uplad_sucessfull">Podaci su uspješno preneseni na poslužitelj!</string>
+    <string name="list_of_quizzess_empty">Nema kvizova za prikaz!</string>
+
+    <!-- ListOfQuestionsActivity -->
+    <string name="list_of_questions_add_button">Dodaj novo pitanje</string>
+    <string name="list_of_questions_delete">Obriši pitanje</string>
+    <string name="list_of_questions_edit">Uredi pitanje</string>
+    <string name="list_of_questions_cancel">Odustani</string>
+    <string name="list_of_questions_add_standard_button">Standardno pitanje</string>
+    <string name="list_of_questions_add_mc_button">Pitanje sa više odgovora</string>
+    <string name="list_of_questions_add_cancel">Odustani</string>
+    <string name="list_of_questions_empty">Nema pitanja za prikaz!</string>
+
+    <!-- StandardQuestionActivity -->
+    <string name="standard_question_enter_question_edit_text">Unesi pitanje ovdje</string>
+    <string name="standard_question_ans_button">Dodaj novi mogući odgovor</string>
+    <string name="standard_question_save_button">Spremi pitanje i odgovore</string>
+    <string name="standard_question_cancel">Odustani</string>
+    <string name="standard_question_enter_answer_edit_text">Unesi mogući točan odgovor</string>
+    <string name="standard_question_empty_field_validation">Imate prazno polje!</string>
+    <string name="standard_question_max_validation">Možete unijeti najviše 6 odgovar!</string>
+
+    <!-- MultipleChoiceQuestionActivity -->
+    <string name="mc_question_enter_question_edit_text">Unesi pitanje ovdje</string>
+    <string name="mc_question_ans_correct_button">Dodaj novi točan odgovor</string>
+    <string name="mc_question_ans_wrong_button">Dodaj novi netočan odgovor</string>
+    <string name="mc_question_ans_correct_edit_text">Unesi mogući točan odgovor</string>
+    <string name="mc_question_ans_wrong_edit_text">Unesi mogući netočan odgovor</string>
+    <string name="mc_question_save_button">Spremi pitanje i odgovore</string>
+    <string name="mc_question_cancel">Odustani</string>
+    <string name="mc_empty_field_validation">Imate prazno polje!</string>
+    <string name="mc_minimum_validation">Morate imate najmanje jedan točan i jedan netočan odgovor!</string>
+
+    <!-- QuizUserActivity -->
+    <string name="quiz_user_retrieve_button">Dohvati kviz</string>
+    <string name="quiz_user_list_button">Dostupni kvizovi</string>
+    <string name="quiz_user_logout_button">Odjavi se</string>
+    <string name="quiz_user_pop_up_text">Unesite ključ kviza</string>
+    <string name="quiz_user_pop_up_edit_text">Ključ od kviza</string>
+    <string name="quiz_user_pop_up_retrieve_button">Dohvati</string>
+    <string name="quiz_user_pop_up_cancel_button">Odustani</string>
+    <string name="quiz_user_retrieve_success">Kviz uspješno preuzet!</string>
+    <string name="quiz_user_key_exist">Kviz pod istim ključem već je preuzet!</string>
+    <string name="quiz_user_key_not_exist">Uneseni ključ ne postoji!</string>
+    <string name="quiz_user_pop_up_validation">Ovo je obavezno polje!</string>
+
+    <!-- QuizActivity -->
+    <string name="quiz_button">Slijedeće pitanje</string>
+    <string name="quiz_checkbox_validation">Nemate označenih odgovora!</string>
+
+    <!-- QuizResultActivity -->
+    <string name="quiz_result_score">Ostvareni rezultat je: </string>
+    <string name="quiz_result_button">Povratak na početnu</string>
+
+</resources>

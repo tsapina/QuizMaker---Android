@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.activitiesQuizCreator.MCQuestionActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:id="@+id/etEnterQuestion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/standard_question_enter_question_edit_text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/standard_question_ans_button"
+        android:onClick="addNewAns"
+        android:id="@+id/bntAddNewAns"
+        android:layout_below="@+id/etEnterQuestion"
+        android:layout_alignRight="@+id/etEnterQuestion"
+        android:layout_alignEnd="@+id/etEnterQuestion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSaveQuestion"
+
+        android:id="@+id/answersTableLayout"
+        android:layout_below="@+id/bntAddNewAns">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7px">
+            <EditText
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:hint="@string/standard_question_enter_answer_edit_text"
+                android:background="#a5f687"
+                android:padding="5px" />
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="50px"
+                android:layout_weight="1"
+                android:src="@drawable/delete"
+                android:layout_gravity="center_vertical"
+                android:onClick="deleteRow"
+                android:layout_column="1" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/standard_question_cancel"
+        android:id="@+id/btnCancel"
+        android:onClick="cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnSaveQuestion"
+        android:layout_alignEnd="@+id/btnSaveQuestion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/standard_question_save_button"
+        android:onClick="saveQuestion"
+        android:id="@+id/btnSaveQuestion"
+        android:layout_above="@+id/btnCancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

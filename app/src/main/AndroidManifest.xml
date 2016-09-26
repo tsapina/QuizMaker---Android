@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.tosapinaetfos.quizmaker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.activitiesLoginRegister.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.activitiesLoginRegister.RegisterActivity" />
+        <activity android:name=".activities.activitiesQuizCreator.QuizCreatorActivity" />
+        <activity android:name=".activities.activitiesQuizUser.QuizUserActivity" />
+        <activity android:name=".activities.activitiesQuizCreator.ListOfQuizzesActivity" />
+        <activity android:name=".activities.activitiesQuizCreator.ListOfQuestionsActivity" />
+        <activity android:name=".activities.activitiesQuizCreator.StandardQuestionActivity" />
+        <activity android:name=".activities.activitiesQuizCreator.MCQuestionActivity" />
+        <activity android:name=".activities.activitiesQuizCreator.MCQEditActivity" />
+        <activity android:name=".activities.activitiesQuizCreator.SQEditActivity" />
+        <activity android:name=".activities.activitiesQuizUser.ListOfUserQuizzesActivity" />
+        <activity android:name=".activities.activitiesQuizUser.QuizActivity" />
+        <activity android:name=".activities.activitiesQuizUser.QuizResultActivity"></activity>
+    </application>
+
+</manifest>

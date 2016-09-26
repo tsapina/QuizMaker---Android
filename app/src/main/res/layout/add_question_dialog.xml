@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_of_questions_add_standard_button"
+        android:onClick="goToStandardQuestion"
+        android:id="@+id/btnStandardQuestion"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_of_questions_add_mc_button"
+        android:onClick="goToMCQuestion"
+        android:id="@+id/btnMCQuestion"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_of_questions_add_cancel"
+        android:onClick="cancelDialog"
+        android:id="@+id/btnConfirmationCancel" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ovo je title"
+            android:id="@+id/tvQuizName"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ovo je datum"
+            android:id="@+id/tvQuizDateOfCreation"
+            android:textSize="13dp"
+            android:textStyle="italic" />
+</LinearLayout>
